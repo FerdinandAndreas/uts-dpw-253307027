@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isi Formulir — PPDB SMAN 1 MAGETAN</title>
+  <link rel="stylesheet" href="asset/css/style.css" />
+</head>
+<body>
+
+  
+  <header>
+    <img src="./asset/img/logo.png" alt="Logo Sekolah" class="logo-icon" />
+    <h1>Penerimaan Peserta Didik Baru (PPDB)</h1>
+    <p class="tagline">SMA Negeri 1 Magetan &mdash; Tahun Ajaran 2026/2027</p>
+  </header>
+
+  
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="alur.html">Alur Pendaftaran</a>
+    <a href="form.html">Isi Formulir</a>
+  </nav>
+
+  
+  <main>
+    <div class="card">
+
+      <h2 class="section-title">Formulir Biodata Calon Siswa</h2>
+      <p class="form-desc">
+        Mohon isi data berikut dengan benar sesuai dengan dokumen asli (KK / Akta Kelahiran / Ijazah).
+        Semua kolom wajib diisi sebelum pendaftaran dapat dikirimkan.
+      </p>
+
+      
+      <form id="form-ppdb" novalidate>
+
+        
+        <div class="form-group">
+          <label for="nama">Nama Lengkap Sesuai Ijazah/Akta:</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Cth: Ferdinand Andreas"
+            autocomplete="name"
+          />
+        </div>
+
+        
+        <div class="form-group">
+          <label for="nik">Nomor Induk Kependudukan (NIK &mdash; 16 Digit):</label>
+          <input
+            type="number"
+            id="nik"
+            name="nik"
+            placeholder="16 Digit NIK"
+            min="0"
+          />
+        </div>
+
+        
+        <div class="form-group">
+          <label for="jalur">Jalur Pendaftaran:</label>
+          <select id="jalur" name="jalur">
+            <option value="">-- Pilih Jalur --</option>
+            <option value="zonasi">Zonasi</option>
+            <option value="prestasi">Prestasi</option>
+            <option value="afirmasi">Afirmasi</option>
+            <option value="mutasi">Perpindahan Tugas Orang Tua / Mutasi</option>
+          </select>
+        </div>
+
+        
+        <button type="button" id="btn-kirim" class="btn-submit">
+          Kirim Pendaftaran
+        </button>
+
+      </form>
+
+    </div>
+  </main>
+
+
+  <footer>
+    &copy; 2026 <span>SMA Negeri 1 Magetan</span>. Institusi Pendidikan Terakreditasi A
+  </footer>
+
+ 
+  <div id="toast"></div>
+
+  <script src="asset/javascript/script.js"></script>
+</body>
+</html>
